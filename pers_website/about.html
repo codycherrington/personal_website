@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About</title>
+        <link href="pers.css" rel="stylesheet">
+        <script src="pers.js"></script>
+
+        <style>
+            .about-container {
+                display: grid;
+                grid-template-rows: repeat(200px, 4) ;
+                justify-content: center;
+            }
+            h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #272c39;
+                height: 5rem;
+                border-radius: 10px;
+                width: 700px;
+                position: relative;
+                z-index: 2; 
+                content: center;
+            }
+
+             .box {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+    
+            .box p {
+                display: none;
+            }
+
+            .box:hover p{
+                justify-content: center;
+                position: absolute;
+                z-index: 1;
+                display: grid;
+                animation: slide-down 1s;
+                background-color: #4e5973;
+                height: 6rem;
+                border-radius: 10px;
+                width: 700px;
+                padding: 10px;
+            }
+    
+            @keyframes slide-down {
+                0% {
+                    transform: translateY(-100%);
+                }
+                100% {
+                    transform: translateY(0);
+                }
+            }
+
+            @keyframes slide-up {
+                100% {
+                    transform: translateY(0);
+                }
+                0% {
+                    transform: translateY(100%);
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <ul class="menu-bar">
+            <li class="menu"><a href="home.html">Home</a></li>
+            <li class="menu"><a href="about.html" style="text-decoration: underline;">About</a></li>
+            <li class="menu"><a href="work.html">Work History</a></li>
+            <li class="menu"><a href="education.html">Education/Projects</a></li>
+            <li class="menu"><a href="apple_res.pdf" target="_blank">Resume</a></li>
+            <li class="dropdown" style="float:right">
+                <a class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="https://www.linkedin.com/in/cody-cherrington-84576b213/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/codycherrington" target="_blank">Github</a>
+                        <a href="#" onclick="copyText('Phone Number')">(936) 827-6762</a>
+                        <a href="#" onclick="copyText('Email')">codycherrington@outlook.com</a>
+                        <p id="Phone Number" style="display: none;">9368276762</p>
+                        <p id="Email" style="display: none;">codycherrington@outlook.com</p>
+                    </div>
+            </li>
+        </ul>
+        <div class="about-container">
+            <div class="box">
+                <h3 class="about-head" style="text-align: center;">About Me</h3>
+                <p class="about" style="text-align: center;"> 
+                    My name is Cody Cherrington. I am an Applied Maths and Computer Science student at Texas State University, set to graduate in Spring 2024.
+                    My career interests include developing applications to solve mathematical/computational problems, data analysis, software engineering, or motorsport engineering.
+                    Outside of my professional life, I enjoy watching motorsports, specifically F1 and Indycar. I also enjoy fishing, hiking, running, and playing ultimate frisbee.
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="early-head" style="text-align: center;">Early life</h3>
+                <p class="early" style="text-align: center;">
+                    I was born in a small town in Russia called Nizhny Novgorod on November 22, 1998. Six months later, I was adopted and brought over to Texas.
+                    I grew up in a small town south of Austin, Texas called Wimberley. During that time, I played many sports for Wimberley High School such as football, basketball, track and field, and powerlifting.
+                    After I graduated High School, I studied Kinesiology at The University of North Texas in Denton, Texas. My time as a North Texas student was short lived, as after one semester, I transferred to Texas State University. 
+                    Once I transferred to Texas State, I switched my major to Applied Math, and have been working on that degree ever since. 
+                </p>
+            </div>
+            <div class="box">
+                <h3 class="facts-head" style="text-align: center;">Fun Facts</h3>
+                <p class="facts" style="text-align: center;">
+                    I love playing chess <br> I love Formula 1 and almost all motorsport <br> I know how to brew an espresso latte and make latte art
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,204 @@
+/* For menu bar atop each page */
+
+.menu-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+}
+
+.menu {
+    float: left;
+}
+
+.menu a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 90px;
+    
+
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+    border-radius: 90px;
+    bottom: 5px;
+}
+
+.menu.dropdown {
+    display: inline-block;
+    background-color: black;
+    border-radius: 90px;
+}
+
+.dropdown {
+    position: absolute;
+    border-radius: 90px;
+    background-color: black;
+    right: 10px;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color:#5c7080; */
+    min-width: 160px;
+    right: 0rem;
+    z-index: 999;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 15px 16px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    background-color: #2f425e;
+    border-radius: 90px;
+}
+
+.dropdown-content a:hover {
+    background-color:#4a546c;
+    border-radius: 90px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 10px;
+}
+
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.bio {
+    margin-top: 15rem;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+    animation-delay: 1.5s;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-head {
+    margin-top: 4rem;
+}
+
+.name {
+    text-align: Center;
+    position: relative;
+    align-self: center;
+    width: 100%;
+    font-size: 100px;
+    opacity: 0;
+    animation: fade-in 1s ease-in forwards;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #161b1f;
+    color: white;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.facts-div {
+    text-align: center;
+}
+
+.facts-div ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.about-body {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.work-head {
+    margin-top: 4rem;
+}
+
+.Work-history {
+    display: flex;
+}
+  
+.jobs {
+    list-style: none;
+    margin-left: -30px;
+}
+  
+.jobs li {
+    background-color: #272c39;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: default;
+    position: relative;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.jobs li:hover .skills {
+    display: flex;
+}
+  
+.skills {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 250px;
+    gap: 10px;
+}
+  
+.skills li {
+    background-color: #4a546c;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+  
+  
+
+
+
